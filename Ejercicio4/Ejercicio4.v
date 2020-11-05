@@ -10,7 +10,7 @@ always @(enable or I)
     end 
 endmodule 
 
-module BufferTriEstado2bits (input wire [1:0] enable, input wire [1:0] I, output  O[1:0]); 
+module BufferTriEstado2bits (input  [1:0] enable, input  [1:0] I, output  O[1:0]); 
 
 BufferTriEstado1bit BTE_1(enable[0], I[0], O[0]);
 BufferTriEstado1bit BTE_2(enable[1], I[1], O[1]);
